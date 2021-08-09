@@ -120,7 +120,7 @@ display: flex;
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 90%;
+  max-width: 80%;
   position: relative;
   margin: 0 auto;
 }
