@@ -650,7 +650,7 @@ table a, #comments a{background-color:inherit;}
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
 	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
-	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin: 0 0 30px 38px;
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin: 0 0 30px 0;
     font-size: 12px;}
 
 	#topbar{text-align:center;}
@@ -746,5 +746,14 @@ input[type=submit]:hover {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 700px){
+  .text p{
+    font-size: 8px;
+    padding: 10px;
+  }
+  .one_third span{
+    font-size: 10px;
   }
 }
