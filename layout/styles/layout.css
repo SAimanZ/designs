@@ -11,7 +11,9 @@
 .row4, .row4 a{}
 .row5, .row5 a{}
 
-
+*{
+  font-family: 'Montserrat', sans-serif;
+}
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
 #topbar{padding:20px 0; font-size:.8rem; text-transform:uppercase;}
@@ -36,9 +38,7 @@
 font-size: 18px;
 color: gray;
 }
-.cvr{
-	height: 104px;
-}
+
 
 .COVER{
   position: relative;
@@ -106,7 +106,10 @@ display: flex;
 .media1{
   display: none;
 }
-
+.cvr ul li{
+  font-size: 12px;
+ 
+}
 }
 .mySlides {display: none;}
 .fade img {vertical-align: middle;}
@@ -127,7 +130,19 @@ display: flex;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}/* Caption text */
+.text {
+  color: #bcd6f3;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
+
+
 
 /* The dots/bullets/indicators */
 .dot {
@@ -190,12 +205,12 @@ display: flex;
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:80px 0;}
+.container{padding-top: 80px;}
 
 /* Content */
 .container .content{}
 
-.sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center; line-height: 3;}
+.sectiontitle{display:block; max-width:55%; margin:0 auto; text-align:center; line-height: 3;}
 .sectiontitle *{margin:0;}
 
 /* Introblocks */
@@ -204,7 +219,7 @@ display: flex;
 /* Services - can be more than four */
 #services{}
 #services li{margin-bottom:50px;}
-#services li:nth-last-child(-n+4){margin-bottom:0;}/* Removes bottom margin from the last line of items - margin is restored in the media queries when items stack */
+#services li:nth-last-child(-n+4){}/* Removes bottom margin from the last line of items - margin is restored in the media queries when items stack */
 #services li:nth-child(4n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
 #services article{display:block; padding:30px 15px; text-align:center;}
 #services article *{margin:0 0 15px 0; padding:0; line-height:1;}
@@ -261,7 +276,7 @@ display: flex;
 #ctdetails{display:block; position:relative; margin:80px 0 0 0; padding:80px 0 0 0; border-top:5px solid;}
 #ctdetails > ul{}
 #ctdetails > ul li{}
-#ctdetails > ul li > div{display:block; position:relative; min-height:75px;/* padding + icon */ padding:15px 15px 15px 80px; line-height:1;}
+#ctdetails > ul li > div{display:block; position:relative; min-height:75px;/* padding + icon */ padding:15px 15px 15px 67px; line-height:1;}
 #ctdetails > ul li:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
 #ctdetails > ul li i{position:absolute; top:15px; left:15px; width:45px; height:45px; line-height:45px; font-size:16px; text-align:center;}
 #ctdetails > ul li span{display:block; padding:4px 0 0 0;}
@@ -404,7 +419,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#A8A8A8; background-color:#202020;}
+body{color:#A8A8A8;}
 a{color:#3A93F3;}
 a:active, a:focus{background:transparent !important;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
@@ -439,7 +454,10 @@ input:focus, textarea:focus, *:required:focus{border-color:#3A93F3 !important;}
 
 /* Header */
 #header #logo a{color:inherit;}
-
+.cvr ul li{
+  list-style: none;
+  margin: 15px;
+}
 .carousel-caption{
 	background-color: #fff;
 	box-sizing: border-box;
@@ -483,7 +501,7 @@ border-color: #5b95ca;
 /* Content */
 #introblocks{box-shadow:0px 15px 15px 0px rgba(0,0,0,.1);}
 
-#services article{color:#474747; background-color: rgb(113 108 108 / 12%);padding: 36px 9px;}
+#services article{color:#474747; background-color: rgb(113 108 108 / 12%);padding: 36px 9px;height: 350px;}
 #services article:hover{background-color: #1dcdfe; cursor: pointer;color: #fff;}
 #services article a i{color:#3A93F3; background-color:#FFFFFF;}
 #services article:hover a i{color:#FFFFFF; background-color:#3A93F3;}
@@ -633,8 +651,8 @@ table a, #comments a{background-color:inherit;}
 	.sectiontitle{max-width:none;}
 	.sd-third > li{max-width:348px;}/* Restrict the width to the one_third grid element in smaller devices */
 
-	#services li:nth-last-child(-n+4){margin-bottom:50px;}
-	#services li:last-child{margin-bottom:0;}
+	#services li:nth-last-child(-n+4){}
+	#services li:last-child{}
 
 	#footer{margin-top: 15px;}
 	#footer .latestimg > li, #footer .latestimg > li:nth-last-child(-n+3){display:inline-block; float:none; width:auto; margin:0 5% 5% 0;}
@@ -687,8 +705,8 @@ input[type=submit]:hover {
 /* Style the container/contact section */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
+
+  
 }
 
 /* Create two columns that float next to eachother */
