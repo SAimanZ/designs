@@ -470,7 +470,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#3A93F3 !important;}
   position: absolute;
   top: 27%;
   left: 50%;
-height: 250px;
+height: 285px;
 }
 .carousel-caption h3{
 font-size: 22px;
@@ -496,7 +496,7 @@ border-color: #5b95ca;
    font-size: 15px;
   }
   .carousel-caption p {
- font-size: 10px;
+ font-size: 7px;
   }
 }
 
@@ -623,7 +623,7 @@ table a, #comments a{background-color:inherit;}
   text-align: center;
 }
 .sectiontitle h6{
-  font-size: 14px;
+  font-size: 9px;
 }
 	#topbar{}
 
@@ -758,8 +758,8 @@ font-size: 7px;
 margin-top: 56%;
   }
   .text p{
-    font-size: 5px;
-    padding: 10px;
+    display: none;
+    
   }
   .one_third span{
     font-size: 10px;
@@ -767,5 +767,8 @@ margin-top: 56%;
   .sld {
     width: 80%;
     margin: 0 auto;
+  }
+  .carousel-caption{
+    font-size: 12px;
   }
 }
